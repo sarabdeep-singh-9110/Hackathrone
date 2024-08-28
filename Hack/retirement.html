@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Retirement Planning</title>
+    <link rel="stylesheet" href="retirement.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Retirement Planner</h1>
+        <div class="form-group">
+            <label for="currentAge">Current Age:</label>
+            <input type="number" id="currentAge" placeholder="Enter your current age">
+        </div>
+        <div class="form-group">
+            <label for="retirementAge">Retirement Age:</label>
+            <input type="number" id="retirementAge" placeholder="Enter your retirement age">
+        </div>
+        <div class="form-group">
+            <label for="currentSavings">Current Savings (₹):</label>
+            <input type="number" id="currentSavings" placeholder="Enter your current savings">
+        </div>
+        <div class="form-group">
+            <label for="annualContribution">Annual Contribution (₹):</label>
+            <input type="number" id="annualContribution" placeholder="Enter your annual contribution">
+        </div>
+        <div class="form-group">
+            <label for="annualReturnRate">Annual Return Rate (%):</label>
+            <input type="number" id="annualReturnRate" step="0.1" placeholder="Enter your expected annual return rate">
+        </div>
+        <button onclick="calculateRetirement()">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+</body>
+</html>
